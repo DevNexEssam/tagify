@@ -1,6 +1,5 @@
 export default function MetaForm({ formData, handleChange, generateMetaTags, clearForm }) {
   const fields = [
-    { label: 'Title', name: 'title', required: true },
     { label: 'Description', name: 'description', type: 'textarea', required: true },
     { label: 'Keywords (comma separated)', name: 'keywords' },
     { label: 'Site Name', name: 'siteName' },

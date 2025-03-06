@@ -7,7 +7,6 @@ import MetaOutput from '@components/MetaOutput'
 export default function MetaTagGenerator() {
   
   const [formData, setFormData] = useState({
-    title: '',
     description: '',
     keywords: '',
     siteName: '',
@@ -29,7 +28,6 @@ export default function MetaTagGenerator() {
     
     const tags = `
 <!-- Primary Meta Tags -->
-<title>${formData.title}</title>
 <meta name="title" content="${formData.title}">
 <meta name="description" content="${formData.description}">
 ${formData.keywords && `<meta name="keywords" content="${formData.keywords}">`}
