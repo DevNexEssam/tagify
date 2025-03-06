@@ -5,6 +5,7 @@ import MetaForm from '@components/MetaForm'
 import MetaOutput from '@components/MetaOutput'
 
 export default function MetaTagGenerator() {
+  
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -59,7 +60,7 @@ ${formData.ogImage && `<meta property="twitter:image" content="${formData.ogImag
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
+    <div className="min-h-screen py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <Header />
         
